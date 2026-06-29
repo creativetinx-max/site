@@ -1,3 +1,48 @@
+/* ── @font-face declarations ── */
+@font-face {
+  font-family: 'GT Super Display';
+  src: url('/fonts/GT-Super-Display-Light-Trial.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Super Display';
+  src: url('/fonts/GT-Super-Display-Regular-Trial.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Super Display';
+  src: url('/fonts/GT-Super-Display-Regular-Italic-Trial.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Super Display';
+  src: url('/fonts/GT-Super-Display-Medium-Trial.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'GT Super Display';
+  src: url('/fonts/GT-Super-Display-Bold-Trial.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Boldstrom';
+  src: url('/fonts/Boldstrom 400.otf') format('opentype'),
+       url('/fonts/Boldstrom-z87Ml.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* Color Palette - Keeping the warm summer vibe with strong yellow */
   --primary: #FFD10E;
@@ -12,8 +57,8 @@
 
   /* Typography */
   --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-display: local('GT Super DS'), 'Times New Roman', serif;
-  --font-logo: local('Boldstorm'), 'Helvetica Neue', sans-serif;
+  --font-display: 'GT Super Display', 'Georgia', serif;
+  --font-logo: 'Boldstrom', 'Helvetica Neue', sans-serif;
 
   /* Spacing */
   --space-xs: 0.5rem;
@@ -144,18 +189,53 @@ html.lenis, html.lenis body {
   padding: var(--space-xl) 0;
 }
 
+/* ---- Cloud texture overlays ---- */
+.cloud-texture,
+.cloud-texture-alt {
+  position: relative;
+}
+
+.cloud-texture::after,
+.cloud-texture-alt::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.28;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cloud-texture::after {
+  background-image: url('/img/cloud-texture.jpg');
+}
+
+.cloud-texture-alt::after {
+  background-image: url('/img/cloud-texture-2.jpg');
+}
+
+/* Ensure section content sits above the overlay */
+.cloud-texture > *,
+.cloud-texture-alt > * {
+  position: relative;
+  z-index: 1;
+}
+
 /* ------------------- Text Animation specific to reference ------------------- */
 [data-text-anim="header"] .gsap_split_line { 
-  padding: calc(1.5 * 1.5rem);
-  margin: calc(1.5 * -1.5rem);
+  padding: calc(1.5 * 1.5rem) 0;
+  margin: calc(1.5 * -1.5rem) 0;
   overflow: hidden;
   will-change: transform;
 }
 
 @media screen and (max-width: 767px) {
   [data-text-anim="header"] .gsap_split_line {
-    padding: calc(1.5 * 0.75rem);
-    margin: calc(1.5 * -0.75rem);
+    padding: calc(1.5 * 0.75rem) 0;
+    margin: calc(1.5 * -0.75rem) 0;
   }
 }
 

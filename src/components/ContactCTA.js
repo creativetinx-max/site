@@ -8,6 +8,7 @@ export default function ContactCTA() {
 
   return (
     <section 
+      className="cloud-texture"
       style={{
         backgroundColor: 'var(--bg-light)',
         color: 'var(--text-dark)',

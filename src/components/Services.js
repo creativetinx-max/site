@@ -54,7 +54,7 @@ export default function Services() {
   const keys = ['product', 'location', 'web', 'content'];
 
   return (
-    <section ref={sectionRef} className={styles.section} id="services">
+    <section ref={sectionRef} className={`${styles.section} cloud-texture`} id="services">
       <div className="container">
         <div className={styles.header}>
           <span className={styles.label}>{t('label')}</span>

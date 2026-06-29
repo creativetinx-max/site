@@ -33,6 +33,7 @@ export default function Philosophy() {
   return (
     <section 
       ref={sectionRef}
+      className="cloud-texture-alt"
       style={{
         position: 'relative',
         minHeight: '80vh',

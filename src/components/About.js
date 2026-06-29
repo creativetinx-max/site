@@ -53,7 +53,7 @@ export default function About() {
   return (
     <section 
       ref={sectionRef} 
-      className="section-padding"
+      className="section-padding cloud-texture"
       style={{ backgroundColor: 'var(--bg-light)', color: 'var(--text-dark)' }}
     >
       <div className="container">
@@ -87,7 +87,7 @@ export default function About() {
 
           <div style={{ 
             display: 'grid', 
-            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', 
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
             gap: '3rem',
             maxWidth: '900px',
             marginLeft: 'auto'
