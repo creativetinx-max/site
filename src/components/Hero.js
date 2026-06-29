@@ -215,7 +215,7 @@ export default function Hero() {
             pointerEvents: 'none',
           }}>
             <h1 style={{
-              fontSize: 'clamp(4rem, 12vw, 11rem)',
+              fontSize: 'clamp(2.5rem, 11vw, 11rem)',
               lineHeight: 0.95,
               letterSpacing: '-0.02em',
               textTransform: 'uppercase',
