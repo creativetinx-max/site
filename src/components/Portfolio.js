@@ -10,10 +10,10 @@ import styles from './Portfolio.module.css';
 gsap.registerPlugin(ScrollTrigger);
 
 const portfolioMedia = [
-  { img: 'https://images.pexels.com/photos/1482193/pexels-photo-1482193.jpeg?auto=compress&cs=tinysrgb&w=1200', video: '/videos/stock/6772413-uhd_3840_2160_30fps.mp4' },
-  { img: 'https://images.pexels.com/photos/1738986/pexels-photo-1738986.jpeg?auto=compress&cs=tinysrgb&w=1200', video: '/videos/stock/12291794_1920_1080_24fps.mp4' },
-  { img: 'https://images.pexels.com/photos/2261502/pexels-photo-2261502.jpeg?auto=compress&cs=tinysrgb&w=1200', video: '/videos/stock/11903734_2160_3840_30fps.mp4' },
-  { img: 'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=1200', video: '/videos/stock/6666911-uhd_2160_3744_30fps.mp4' },
+  { img: 'https://images.pexels.com/photos/1482193/pexels-photo-1482193.jpeg?auto=compress&cs=tinysrgb&w=1200', video: '/videos/portfolio/v1.mp4' },
+  { img: 'https://images.pexels.com/photos/1738986/pexels-photo-1738986.jpeg?auto=compress&cs=tinysrgb&w=1200', video: '/videos/portfolio/v2.mp4' },
+  { img: 'https://images.pexels.com/photos/2261502/pexels-photo-2261502.jpeg?auto=compress&cs=tinysrgb&w=1200', video: '/videos/portfolio/v3.mp4' },
+  { img: 'https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=1200', video: '/videos/portfolio/v4.mp4' },
 ];
 
 export default function Portfolio() {
