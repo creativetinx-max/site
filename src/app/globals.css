@@ -1,40 +1,5 @@
 /* ── @font-face declarations ── */
 @font-face {
-  font-family: 'GT Super Display';
-  src: url('/fonts/GT-Super-Display-Light-Trial.otf') format('opentype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'GT Super Display';
-  src: url('/fonts/GT-Super-Display-Regular-Trial.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'GT Super Display';
-  src: url('/fonts/GT-Super-Display-Regular-Italic-Trial.otf') format('opentype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'GT Super Display';
-  src: url('/fonts/GT-Super-Display-Medium-Trial.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'GT Super Display';
-  src: url('/fonts/GT-Super-Display-Bold-Trial.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
   font-family: 'Boldstrom';
   src: url('/fonts/Boldstrom 400.otf') format('opentype'),
        url('/fonts/Boldstrom-z87Ml.ttf') format('truetype');
@@ -57,7 +22,7 @@
 
   /* Typography */
   --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-display: 'GT Super Display', 'Georgia', serif;
+  --font-display: var(--font-bodoni), 'Georgia', serif;
   --font-logo: 'Boldstrom', 'Helvetica Neue', sans-serif;
 
   /* Spacing */
