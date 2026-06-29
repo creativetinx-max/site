@@ -119,52 +119,26 @@ export default function Hero() {
         if (refs?.accent) gsap.set(refs.accent, { yPercent: 120 });
       });
 
-      /* Loader: first video-wrap starts as a small centered box and expands */
-      const firstWrap = videoWrapRef.current[0];
-      gsap.set(firstWrap, {
-        width: '200px',
-        height: '200px',
-        borderRadius: '20px',
-        top: '50%',
-        left: '50%',
-        xPercent: -50,
-        yPercent: -50,
-      });
+      /* Reveal first slide text */
+      const t0 = titleLineRefs.current[0]?.title;
+      const a0 = titleLineRefs.current[0]?.accent;
 
       const tl = gsap.timeline({
+        delay: 0.3,
         onComplete: () => {
-          /* Reset the transform so future slide transitions start clean */
-          gsap.set(firstWrap, { clearProps: 'xPercent,yPercent' });
           animatingRef.current = false;
           autoplayRef.current = setInterval(() => navigate(1), 6000);
         }
       });
 
-      /* Expand from center to full screen */
-      tl.to(firstWrap, {
-        width: '100%',
-        height: '100%',
-        borderRadius: '0px',
-        top: '0%',
-        left: '0%',
-        xPercent: 0,
-        yPercent: 0,
-        duration: 1.8,
-        ease: 'loader-ease',
-        delay: 0.3,
-      });
-
-      /* Reveal first slide text */
-      const t0 = titleLineRefs.current[0]?.title;
-      const a0 = titleLineRefs.current[0]?.accent;
-      if (t0) tl.to(t0, { yPercent: 0, duration: 1, ease: 'power3.out' }, '-=0.8');
-      if (a0) tl.to(a0, { yPercent: 0, duration: 1, ease: 'power3.out' }, '-=0.7');
+      if (t0) tl.to(t0, { yPercent: 0, duration: 1, ease: 'power3.out' }, 0);
+      if (a0) tl.to(a0, { yPercent: 0, duration: 1, ease: 'power3.out' }, 0.1);
 
       /* Reveal nav */
       tl.fromTo('.hero-nav',
         { y: 50, opacity: 0 },
         { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out' },
-        '-=0.6'
+        0.3
       );
     }, containerRef);
 

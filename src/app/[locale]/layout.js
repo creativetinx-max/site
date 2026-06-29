@@ -5,14 +5,7 @@ import { routing } from '@/i18n/routing';
 import Navbar from '@/components/Navbar';
 import CustomCursor from '@/components/CustomCursor';
 import SmoothScroll from '@/components/SmoothScroll';
-import { Bodoni_Moda } from 'next/font/google';
 import '../globals.css';
-
-const bodoni = Bodoni_Moda({
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-bodoni',
-});
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -35,7 +28,7 @@ export default async function LocaleLayout({ children, params }) {
 
   return (
     <html lang={locale}>
-      <body className={bodoni.variable}>
+      <body>
         <NextIntlClientProvider messages={messages}>
           <SmoothScroll>
             <CustomCursor />

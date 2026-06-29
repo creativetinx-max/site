@@ -1,9 +1,25 @@
-/* ── @font-face declarations ── */
+/* ── Google Fonts: Bodoni Moda ── */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+/* ── @font-face: Helvetica Neue (local) ── */
 @font-face {
-  font-family: 'Boldstrom';
-  src: url('/fonts/Boldstrom 400.otf') format('opentype'),
-       url('/fonts/Boldstrom-z87Ml.ttf') format('truetype');
+  font-family: 'Helvetica Neue Local';
+  src: url('/fonts/HelveticaNeue-Roman.otf') format('opentype');
   font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue Local';
+  src: url('/fonts/HelveticaNeue-Heavy.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Helvetica Neue Local';
+  src: url('/fonts/HelveticaNeue-Black.otf') format('opentype');
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
@@ -21,9 +37,9 @@
   --text-light: #FFFFF0;
 
   /* Typography */
-  --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-display: var(--font-bodoni), 'Georgia', serif;
-  --font-logo: 'Boldstrom', 'Helvetica Neue', sans-serif;
+  --font-body: 'Helvetica Neue Local', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-display: 'Bodoni Moda', 'Georgia', serif;
+  --font-logo: 'Helvetica Neue Local', 'Helvetica Neue', Helvetica, sans-serif;
 
   /* Spacing */
   --space-xs: 0.5rem;
