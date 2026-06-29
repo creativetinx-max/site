@@ -9,7 +9,12 @@
     "tagline": "We Create",
     "taglineAccent": "Moving Stories",
     "subtitle": "Product shoots · Location stories · Web experiences · Visual content",
-    "scroll": "Scroll to explore"
+    "scroll": "Scroll to explore",
+    "slides": {
+      "slide1": { "title": "Visual", "titleAccent": "Excellence" },
+      "slide2": { "title": "Creative", "titleAccent": "Direction" },
+      "slide3": { "title": "Brand", "titleAccent": "Stories" }
+    }
   },
   "about": {
     "label": "About Us",

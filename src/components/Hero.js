@@ -11,20 +11,17 @@ const SLIDES = [
   {
     id: 1,
     videoSrc: '/videos/hero-video.mp4',
-    title: 'Visual',
-    titleAccent: 'Excellence',
+    key: 'slide1'
   },
   {
     id: 2,
     videoSrc: '/videos/hero-video2.mp4',
-    title: 'Creative',
-    titleAccent: 'Direction',
+    key: 'slide2'
   },
   {
     id: 3,
     videoSrc: '/videos/hero-video3.mp4',
-    title: 'Brand',
-    titleAccent: 'Stories',
+    key: 'slide3'
   }
 ];
 
@@ -236,7 +233,7 @@ export default function Hero() {
                   ref={setTitleRef(index, 'title')}
                   style={{ display: 'block', willChange: 'transform' }}
                 >
-                  {slide.title}
+                  {t(`slides.${slide.key}.title`)}
                 </span>
               </span>
               <span style={{ display: 'block', overflow: 'hidden', padding: '0.15em 0' }}>
@@ -244,7 +241,7 @@ export default function Hero() {
                   ref={setTitleRef(index, 'accent')}
                   style={{ display: 'block', color: 'var(--primary)', willChange: 'transform' }}
                 >
-                  {slide.titleAccent}
+                  {t(`slides.${slide.key}.titleAccent`)}
                 </span>
               </span>
             </h1>

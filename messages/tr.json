@@ -9,7 +9,12 @@
     "tagline": "Hikayeler",
     "taglineAccent": "Yaratıyoruz",
     "subtitle": "Ürün çekimleri · Mekan hikayeleri · Web deneyimleri · Görsel içerik",
-    "scroll": "Keşfetmek için kaydır"
+    "scroll": "Keşfetmek için kaydır",
+    "slides": {
+      "slide1": { "title": "Görsel", "titleAccent": "Mükemmellik" },
+      "slide2": { "title": "Kreatif", "titleAccent": "Yönetim" },
+      "slide3": { "title": "Marka", "titleAccent": "Hikayeleri" }
+    }
   },
   "about": {
     "label": "Hakkımızda",
