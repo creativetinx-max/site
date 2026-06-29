@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "home": "Home",
+    "contact": "Contact",
+    "lang": "TR",
+    "showreel": "Showreel"
+  },
+  "hero": {
+    "tagline": "We Create",
+    "taglineAccent": "Moving Stories",
+    "subtitle": "Product shoots · Location stories · Web experiences · Visual content",
+    "scroll": "Scroll to explore"
+  },
+  "about": {
+    "label": "About Us",
+    "headline": "We are a mobile creative team built around storytelling, movement, and visual expression.",
+    "description": "We travel, explore, and capture stories wherever they happen — turning real spaces and real moments into cinematic experiences. The best stories are not always created in perfect environments. Sometimes they are found on the streets, inside a space, in the details, and in the moments that happen naturally.",
+    "description2": "From commercial shoots and product visuals to locations and digital experiences, we create content with a cinematic approach. Every project starts with an idea and evolves through creativity, exploration, and a unique perspective."
+  },
+  "services": {
+    "label": "What We Do",
+    "headline": "Crafting visual experiences across every medium",
+    "items": {
+      "product": {
+        "title": "Product Shoots",
+        "description": "We capture the texture, mood, and character of every product through cinematic visual storytelling."
+      },
+      "location": {
+        "title": "Location Stories",
+        "description": "Every location has its own character. We bring out the atmosphere, energy, and soul of real spaces."
+      },
+      "web": {
+        "title": "Web Design",
+        "description": "Digital experiences that feel alive. We design and build websites with purpose, motion, and visual identity."
+      },
+      "content": {
+        "title": "Content Creation",
+        "description": "From concept to final frame — we produce visual content that captures attention and creates connection."
+      }
+    }
+  },
+  "portfolio": {
+    "label": "Selected Work",
+    "headline": "Stories we've told",
+    "viewProject": "View Project",
+    "items": {
+      "item1": { "title": "Summer Horizons", "category": "Location · Film" },
+      "item2": { "title": "Golden Hour Collection", "category": "Product · Photography" },
+      "item3": { "title": "Coastal Narratives", "category": "Brand · Content" },
+      "item4": { "title": "Urban Textures", "category": "Location · Film" },
+      "item5": { "title": "Azure Dreams", "category": "Product · Web" },
+      "item6": { "title": "Sunlit Stories", "category": "Content · Photography" }
+    }
+  },
+  "marquee": {
+    "text": "Product Shoots • Location Stories • Web Design • Content Creation • Brand Identity • Visual Storytelling • "
+  },
+  "philosophy": {
+    "label": "Our Philosophy",
+    "headline": "We don't just capture what is in front of the camera.",
+    "headlineAccent": "We look for the atmosphere behind it.",
+    "description": "The light, the energy, the textures, and the emotions that give every frame its identity. Inspired by cinema, street culture, and modern visual language, we create visuals that feel authentic and connected."
+  },
+  "cta": {
+    "headline": "Let's create something",
+    "headlineAccent": "together.",
+    "description": "Every project is a new journey. A new location, a new perspective, and a new story waiting to be captured.",
+    "button": "Get in Touch"
+  },
+  "footer": {
+    "tagline": "Creating moments that feel natural but leave an impact.",
+    "links": "Quick Links",
+    "social": "Connect",
+    "copyright": "© 2025 Tinx Creative. All rights reserved.",
+    "home": "Home",
+    "contact": "Contact"
+  },
+  "contact": {
+    "heroTitle": "Get in",
+    "heroTitleAccent": "Touch",
+    "heroSubtitle": "We'd love to hear about your project. Let's create something extraordinary together.",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Tell us about your project...",
+      "services": "Services you're interested in",
+      "product": "Product Shoots",
+      "location": "Location Stories",
+      "web": "Web Design",
+      "content": "Content Creation",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent! We'll get back to you soon.",
+      "error": "Something went wrong. Please try again."
+    },
+    "info": {
+      "title": "Contact Info",
+      "email": "hello@tinxcreative.com",
+      "phone": "+90 555 123 4567",
+      "location": "Istanbul, Turkey",
+      "social": "Follow Us"
+    }
+  }
+}

@@ -1,0 +1,207 @@
+:root {
+  /* Color Palette - Keeping the warm summer vibe with strong yellow */
+  --primary: #FFD10E;
+  --secondary: #2F9CAA;
+  --bg-deep-blue: #205780;
+  --bg-sage: #A6C0B1;
+  --accent-ocean: #207DA8;
+  --text-dark: #11181C;
+  --bg-light: #FFFFF0;
+  --bg-dark: #11181C;
+  --text-light: #FFFFF0;
+
+  /* Typography */
+  --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-display: local('GT Super DS'), 'Times New Roman', serif;
+  --font-logo: local('Boldstorm'), 'Helvetica Neue', sans-serif;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 8rem;
+
+  /* Layout */
+  --max-width: 1440px;
+  --padding-x: 2rem;
+  --site--column-width: 8vw;
+  --site--gutter: 2vw;
+
+  /* Header */
+  --header-height: 80px;
+
+  /* Animations */
+  --duration-fast: 0.45s;
+  --duration-regular: 0.55s;
+  --duration-slow: 1.2s;
+  --animation-primary: cubic-bezier(0.83, 0, 0.17, 1);
+  --animation-secondary: cubic-bezier(0.31, 0.75, 0.22, 1);
+}
+
+@media (max-width: 768px) {
+  :root {
+    --space-lg: 3rem;
+    --space-xl: 5rem;
+    --padding-x: 1rem;
+    --header-height: 60px;
+    --site--column-width: 12vw;
+    --site--gutter: 4vw;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+/* ------------------- Custom Cursor ------------------- */
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, background-color 0.3s, mix-blend-mode 0.3s;
+  mix-blend-mode: difference;
+}
+
+.cursor.hovered {
+  width: 60px;
+  height: 60px;
+  background-color: var(--text-light);
+  mix-blend-mode: difference;
+}
+
+body:has( a:hover) .cursor,
+body:has( button:hover) .cursor,
+body:has( [data-cursor]:hover) .cursor {
+  width: 3.5em;
+  height: 3.5em;
+  background-color: rgba(255, 209, 14, 0.5); /* Yellow tint on hover */
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .cursor {
+    display: none;
+  }
+}
+
+/* ------------------- Lenis ------------------- */
+html.lenis, html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* ------------------- Shared Utilities ------------------- */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--padding-x);
+}
+
+.section-padding {
+  padding: var(--space-xl) 0;
+}
+
+/* ------------------- Text Animation specific to reference ------------------- */
+[data-text-anim="header"] .gsap_split_line { 
+  padding: calc(1.5 * 1.5rem);
+  margin: calc(1.5 * -1.5rem);
+  overflow: hidden;
+  will-change: transform;
+}
+
+@media screen and (max-width: 767px) {
+  [data-text-anim="header"] .gsap_split_line {
+    padding: calc(1.5 * 0.75rem);
+    margin: calc(1.5 * -0.75rem);
+  }
+}
+
+/* Reference button style */
+.btn-icon-content {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  background: transparent;
+  color: var(--text-dark);
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-icon-content .u-text-style-eyebrow {
+  --text-duplicate-distance: 2rem;
+  text-shadow: 0px var(--text-duplicate-distance) var(--primary);
+  transition: transform var(--duration-regular) var(--animation-primary);
+  display: block;
+}
+
+@media (hover:hover) and (pointer:fine){
+  .btn-icon-content:hover .u-text-style-eyebrow { 
+    transform: translate(0px, calc(-1 * var(--text-duplicate-distance))); 
+  }
+}
+
+/* Magnetic Button (Previous Implementation) */
+.magnetic-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem 2.5rem;
+  background-color: var(--primary);
+  color: var(--text-dark);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 50px;
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.3s ease;
+  font-family: var(--font-body);
+}
+
+.magnetic-btn:hover {
+  box-shadow: 0 15px 30px rgba(255, 209, 14, 0.4);
+}

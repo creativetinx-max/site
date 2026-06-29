@@ -1,0 +1,105 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "contact": "İletişim",
+    "lang": "EN",
+    "showreel": "Showreel"
+  },
+  "hero": {
+    "tagline": "Hikayeler",
+    "taglineAccent": "Yaratıyoruz",
+    "subtitle": "Ürün çekimleri · Mekan hikayeleri · Web deneyimleri · Görsel içerik",
+    "scroll": "Keşfetmek için kaydır"
+  },
+  "about": {
+    "label": "Hakkımızda",
+    "headline": "Fikirleri görsel hikayelere dönüştüren bağımsız bir yaratıcı ekibiz.",
+    "description": "Kamera arkasındaki hareketten, gerçek mekanların atmosferine kadar her projede özgün bir bakış açısı arıyoruz. Bizim için iyi bir görüntü sadece estetik değildir; bir his, bir an ve bir hikaye taşımalıdır.",
+    "description2": "Doğru ışık, doğru açı ve doğru yaklaşım ile markaların kendine ait dünyasını görünür hale getiriyoruz. Sabit kalıplara bağlı kalmadan, her projeye kendi karakteriyle yaklaşıyoruz."
+  },
+  "services": {
+    "label": "Neler Yapıyoruz",
+    "headline": "Her alanda görsel deneyimler tasarlıyoruz",
+    "items": {
+      "product": {
+        "title": "Ürün Çekimleri",
+        "description": "Her ürünün dokusunu, ruhunu ve karakterini sinematik bir görsel dille yakalıyoruz."
+      },
+      "location": {
+        "title": "Mekan Hikayeleri",
+        "description": "Her mekanın kendine ait bir karakteri var. Atmosferi, enerjiyi ve ruhu ortaya çıkarıyoruz."
+      },
+      "web": {
+        "title": "Web Tasarım",
+        "description": "Canlı hissettiren dijital deneyimler. Amaç, hareket ve görsel kimlikle web siteleri tasarlıyoruz."
+      },
+      "content": {
+        "title": "İçerik Üretimi",
+        "description": "Konseptten son kareye — dikkat çeken ve bağ kuran görsel içerikler üretiyoruz."
+      }
+    }
+  },
+  "portfolio": {
+    "label": "Seçili İşler",
+    "headline": "Anlattığımız hikayeler",
+    "viewProject": "Projeyi Gör",
+    "items": {
+      "item1": { "title": "Yaz Ufukları", "category": "Mekan · Film" },
+      "item2": { "title": "Altın Saat Koleksiyonu", "category": "Ürün · Fotoğraf" },
+      "item3": { "title": "Kıyı Anlatıları", "category": "Marka · İçerik" },
+      "item4": { "title": "Kentsel Dokular", "category": "Mekan · Film" },
+      "item5": { "title": "Masmavi Düşler", "category": "Ürün · Web" },
+      "item6": { "title": "Güneşli Hikayeler", "category": "İçerik · Fotoğraf" }
+    }
+  },
+  "marquee": {
+    "text": "Ürün Çekimleri • Mekan Hikayeleri • Web Tasarım • İçerik Üretimi • Marka Kimliği • Görsel Hikaye Anlatımı • "
+  },
+  "philosophy": {
+    "label": "Felsefemiz",
+    "headline": "Kameranın önündekini çekmekle kalmıyoruz.",
+    "headlineAccent": "Arkasındaki atmosferi arıyoruz.",
+    "description": "Işığı, enerjiyi, dokuları ve her kareye kimliğini veren duyguları yakalıyoruz. Sinema, sokak kültürü ve modern görsel dilden ilham alarak otantik ve bağ kuran görseller yaratıyoruz."
+  },
+  "cta": {
+    "headline": "Birlikte bir şeyler",
+    "headlineAccent": "yaratalım.",
+    "description": "Her proje yeni bir yolculuk. Yeni bir mekan, yeni bir perspektif ve yakalanmayı bekleyen yeni bir hikaye.",
+    "button": "Bize Ulaşın"
+  },
+  "footer": {
+    "tagline": "Doğal hissettiren ama iz bırakan anlar yaratıyoruz.",
+    "links": "Hızlı Linkler",
+    "social": "Bağlantı",
+    "copyright": "© 2025 Tinx Creative. Tüm hakları saklıdır.",
+    "home": "Ana Sayfa",
+    "contact": "İletişim"
+  },
+  "contact": {
+    "heroTitle": "Bize",
+    "heroTitleAccent": "Ulaşın",
+    "heroSubtitle": "Projeniz hakkında konuşmak isteriz. Birlikte olağanüstü bir şey yaratalım.",
+    "form": {
+      "name": "Adınız",
+      "email": "E-posta Adresiniz",
+      "subject": "Konu",
+      "message": "Projenizden bahsedin...",
+      "services": "İlgilendiğiniz hizmetler",
+      "product": "Ürün Çekimleri",
+      "location": "Mekan Hikayeleri",
+      "web": "Web Tasarım",
+      "content": "İçerik Üretimi",
+      "send": "Mesaj Gönder",
+      "sending": "Gönderiliyor...",
+      "success": "Mesaj gönderildi! En kısa sürede dönüş yapacağız.",
+      "error": "Bir şeyler ters gitti. Lütfen tekrar deneyin."
+    },
+    "info": {
+      "title": "İletişim Bilgileri",
+      "email": "hello@tinxcreative.com",
+      "phone": "+90 555 123 4567",
+      "location": "İstanbul, Türkiye",
+      "social": "Bizi Takip Edin"
+    }
+  }
+}
